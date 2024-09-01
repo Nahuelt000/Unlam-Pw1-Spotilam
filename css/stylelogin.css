@@ -1,0 +1,137 @@
+@font-face{
+    font-family: 'ShadowsIntoLight';
+    src: url(../img/PTSans-Italic.ttf) format('truetype');
+}
+
+
+header {
+    background-color: #000000;
+    padding: 10px;
+    text-align: left;
+    width: 99.7%;
+    color: #D9DDE5;
+    font-family: 'ShadowsIntoLight';
+    font-size: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logoAuriculares{
+    margin-right: 10px;
+    width: 40px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+     font-family: sans-serif;
+     background: rgb(80,12,59);
+     background: linear-gradient(180deg, rgba(80,12,59,1) 0%, rgba(35,7,27,1) 24%, rgba(18,19,19,1) 74%);
+     min-height: 100vh;
+     }
+
+
+
+
+.boton-iniciar-sesion {
+margin-top: 20px;
+margin-bottom: 20px;
+  width: 350px;
+  height: 50px;
+  border-radius: 500px;
+  background-color: #70225A;
+  font-family: 'Inclusive Sans', sans-serif;
+  font-weight: bold;
+  border: 0px;
+  
+}
+
+.registrarme{
+    font-family: 'Inclusive Sans', sans-serif;
+    color: #D9DDE5;
+    margin-bottom: 10px;
+}
+
+.usuariocontraseña{
+    margin-top: 4em;
+    color: #D9DDE5;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+
+.camposusuarioycontraseña {
+width: 345px;
+height:45px;
+border-radius: 5px;
+background-color: #111010;
+font-size: 14px;
+border: 1px solid gray;
+font-family: 'Inclusive Sans', sans-serif;
+  font-weight: bold;
+}
+
+.loginseccion {
+    background-color: #111010;
+    border: 5px solid black;
+}
+
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    border: 1px solid #ffffff;
+    text-align: center;
+    color: #D9DDE5;
+    
+}
+
+
+.form-registro{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.input-registro{
+    width: 351px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #111010;
+    font-size: 14px;
+    border: 1px solid gray;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-weight: bold;
+    margin: 15px 0px 15px 0px;
+}
+
+.label-registro{
+
+    color: #D9DDE5;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.form-registro input{
+    color: #D9DDE5;
+}
+
+.form-login input{
+    color: #D9DDE5;
+}
+
+.botones-registro input{
+    width: 173px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #111010;
+    font-size: 14px;
+    border: 1px solid gray;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-weight: bold;
+    margin: 15px 0px 15px 0px;
+}

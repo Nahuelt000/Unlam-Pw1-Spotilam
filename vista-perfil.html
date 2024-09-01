@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spotilam Perfil</title>
+    <link rel="shortcut icon" href="./img/auriculares.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/estilos.css">
+    
+</head>
+<body>
+    <section class="contenedorDeSeccionesPerfilPagarPremium">
+        <header class="headerPerfilPagarPremium">
+            <section class="paginaSituada">
+                <h1 id="cancionSonando"></h1>
+            </section>
+            <section class="infoUsuario">
+                <h1 id="nombreUsuario"></h1>
+                <p> <a href="./login.html">Cerrar sesion</a></p>
+            </section>
+            <section class="imagenUsuario">
+                <a href="./vista-perfil.html"><img src="./img/fotousuario.png" alt="Marcar como favorito" class="fotoavatar2"> </a>
+            </section>
+        </header>
+         <section class="seccionFormulario">
+            <section class="formularioDatos">
+                <form class="formPerfil" action="vista-perfil.html" method="get" id="formPerfil" name="formPerfil">
+                    <div class="input-label-perfil">
+                        <label for="perfil-usuario" class="label-perfil">Usuario</label>
+                        <input type="text" id="perfil-usuario" name="perfil-usuario" placeholder="Cambie su usuario" class="input-perfil">
+                    </div>
+                     
+                    <div class="input-label-perfil">
+                        <label for="perfil-pass" class="label-perfil">Contraseña</label>
+                        <input type="password" id="perfil-pass" name="perfil-pass" placeholder="Cambie su contraseña" class="input-perfil">
+                    </div>
+                     
+                    <div class="input-label-perfil">
+                        <label for="perfil-pass2" class="label-perfil">Repetir contraseña</label>
+                        <input type="password" id="perfil-pass2" name="perfil-pass2" placeholder="Repita su contraseña" class="input-perfil">
+                    </div>
+                     
+
+                    <div class="input-label-perfil">
+                        <label for="perfil-fecha-nacimiento" class="label-perfil">Fecha de nacimiento</label>
+                        <input id="perfil-fecha-nacimiento" type="date" name="perfil-fecha-nacimiento" class="input-perfil">
+                    </div>
+
+                    <div class="input-label-perfil">
+                        <label for="perfil-email" class="label-perfil"> Email</label>
+                        <input id="perfilEmail" type="email" name="perfilEmail" placeholder="Cambie su email" required="" class="input-perfil">
+                    </div>
+                                       
+                     <section class="links-perfil">
+                        <a href="./vista-elegir-plan.html" target="_self"><i class="fa-solid fa-star fa-beat-fade"></i>Premium</a>
+                        <a href="login.html" target="_self"><i class="fa-solid fa-user-xmark"></i>Eliminar usuario</a>
+                     </section>
+
+                     <section class="botones-perfil">
+                         <a href="./home.html"> <input type="button" value="Volver al Home" id="perfil-boton-perfil" class="boton-perfil"></a>
+                         <input type="button" onclick="validar_modificacion_perfil()" id="perfil-guardar" value="Guardar" class="boton-perfil">
+                     </section>
+              </form>
+        <footer class="footerPerfilPagarPremium">
+            <section class="integrantesFooter">
+                <p><i class="fa-solid fa-user"></i> Integrante Alarcón Lucía Daniela 46265782</p>
+                <p><i class="fa-solid fa-user"></i> Integrante Cambriglia Luka  45747018</p>
+                <p><i class="fa-solid fa-user"></i> Integrante Rodriguez Agustin Federico 44669205</p>
+                <p><i class="fa-solid fa-user"></i> Integrante Tacacho Nahuel Guillermo 44392518</p>
+            </section>
+            <section class="mapaFooter">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3643339723303!2d-58.56538012417486!3d-34.67075316104181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1681473325690!5m2!1ses!2sar" frameborder="0"></iframe>
+            </section>
+        </footer>
+    </section>
+    <script type="text/javascript" src="js/nombre-usuario.js"></script>
+    <script type="text/javascript" src="js/cancion-sonando.js"></script>
+    <script src="./js/formulario.js"></script>
+</body>
+</html>

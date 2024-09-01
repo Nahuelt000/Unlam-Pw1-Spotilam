@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylelogin.css">
+    <title>Spotilam registro</title>
+    <link rel="shortcut icon" href="./img/auriculares.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Oswald:wght@200&family=PT+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="js/formulario.js"></script>
+
+</head>
+
+<body>
+    <header>
+       <img src="./img/auriculares.png" class="logoAuriculares">
+       <p>SPOTILAM</p>
+    </header>
+
+
+    <form class="form-registro" action="login.html" method="get" id="formregistro" name="formregistro">
+        <label for="registrar-usuario" class="label-registro">Usuario</label>
+        <input type="text" id="registrar-usuario" name="registrar-usuario" placeholder="Ingrese su usuario" class="input-registro">
+
+        <label for="registrar-pass" class="label-registro">Contraseña</label>
+        <input type="password" id="registrar-pass" name="registrar-pass" placeholder="Ingrese su contraseña" class="input-registro">
+
+        <label for="registrar-pass2" class="label-registro">Repetir contraseña</label>
+        <input type="password" id="registrar-pass2" name="registrar-pass2" placeholder="Repita su contraseña" class="input-registro">
+
+        <label for="registrar-email" class="label-registro"> Email</label>
+        <input id="email" type="text" name="email" placeholder="Ingrese su email" class="input-registro">
+
+        <label for="registrar-fecha-nacimiento" class="label-registro">Fecha de nacimiento</label>
+        <input id="registrar-fecha-nacimiento" type="date" name="registrar-fecha-nacimiento" class="input-registro">
+
+        <section class="botones-registro">
+            <input name="Boton" type="button" onclick="validar_registro()" id="registrar-boton-login" value="Registrarse" class="boton-registro" >
+            <input type="reset" id="registrar-cancelar" value="Cancelar" class="boton-registro">
+        </section>
+            <a href="vista-elegir-plan.html"> <input type="button" value="Premium" id="registrar-boton-premium" class="input-registro"></a>
+    </form>
+
+<footer>
+    <section class="integrantesFooter">
+        <p><i class="fa-solid fa-user"></i> Integrante Alarcón Lucía Daniela 46265782</p>
+        <p><i class="fa-solid fa-user"></i> Integrante Cambriglia Luka  45747018</p>
+        <p><i class="fa-solid fa-user"></i> Integrante Rodriguez Agustin Federico 44669205</p>
+        <p><i class="fa-solid fa-user"></i> Integrante Tacacho Nahuel Guillermo 44392518</p>
+    </section>
+</footer>
+    </body>
+
+</html>

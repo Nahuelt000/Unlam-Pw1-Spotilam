@@ -1,0 +1,965 @@
+:root {
+    --color-nav: #242525;
+    --color-header: #111010;
+    --color-footer: #2ecc71;
+    --color-informacionpagina: #121212;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    color: lightcyan;
+}
+
+nav {
+    height: 350px;
+    background-color: var(--color-nav);
+    border: 0px solid black;
+    margin-top: -1em;
+    border-radius: 10px;
+
+}
+
+
+
+header {
+    height: 100px;
+    background-color: var(--color-header);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 35% auto;
+    grid-auto-rows: auto;
+    margin-left: -3em;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+
+footer {
+    height: 200px;
+    background-color: var(--color-nav);
+    border: 1px solid black;
+    text-align: center;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 70% auto;
+
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+
+        height: auto;
+        max-height: 200px;
+
+    }
+
+    .body {
+        margin-bottom: 0;
+    }
+}
+
+
+.contenedorDeSecciones {
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: stretch;
+    gap: 1em;
+}
+
+/*Seccion Izquierda*/
+.seccionIzquierda {
+    width: 90%;
+    position: relative;
+    height: 100%;
+    margin-left: 0em;
+}
+
+@media screen and (max-width: 480px) {
+    .seccionIzquierda {
+        width: 40%;
+
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    .seccionIzquierda {
+        width: 85%;
+    }
+}
+
+
+/*Nav*/
+
+
+.navegacionDePagina {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 70%;
+    height: 3.5em;
+    justify-content: flex-start;
+    margin-left: -1em;
+
+}
+
+
+.logoAuriculares {
+    width: 30px;
+    margin-right: 10px;
+    margin-top: -1em;
+}
+
+.textoAuriculares {
+    font-family: ShadowsIntoLight, Times, serif;
+    font-weight: 600;
+    font-size: 110%;
+    margin-top: -0.5em;
+    color: #D9DDE5;
+}
+
+#primerElemento:hover {
+    background: none;
+    border: none;
+}
+
+.navegacionDePagina a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #D9DDE5;
+    font-size: 100%;
+    margin-top: 0em;
+}
+
+.navegacionDePagina i.material-symbols-outlined {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #000000;
+
+}
+
+.vistaVentana i.material-symbols-outlined {
+    color: #D9DDE5;
+}
+
+
+.navegacionDePagina:hover {
+    background: rgb(77, 10, 56);
+    background: linear-gradient(90deg, rgba(77, 10, 56, 1) 0%, rgba(35, 5, 26, 1) 52%, rgba(18, 19, 19, 1) 80%);
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 55%;
+
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+
+    .navegacionDePagina {
+        width: 30%;
+
+    }
+
+    .navegacionDePagina:hover {
+        width: 90%;
+
+    }
+
+    .textonav {
+        display: none;
+
+    }
+}
+
+
+
+.cancionEnReproduccion {
+    margin-top: 10%;
+    width: 250px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+.marcarfavoritocancionenreproduccion {
+    position: absolute;
+    top: 2.5em;
+    right: 4em;
+    width: 40px;
+    z-index: 1;
+    filter: grayscale(100%);
+}
+
+
+.marcarfavoritocancionenreproduccion:hover {
+    filter: grayscale(0%);
+}
+
+
+@media screen and (max-width: 1280px) {
+    .marcarfavoritocancionenreproduccion {
+        right: 1em;
+
+    }
+}
+
+
+.descripcionCancion {
+    position: relative;
+    height: 350px;
+    text-align: center;
+
+    background-color: var(--color-nav);
+    color: #D9DDE5;
+    margin-top: 1em;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .textoAuriculares {
+        display: none;
+
+    }
+
+    .cancionEnReproduccion {
+        width: 95%;
+
+    }
+
+    .descripcionCancion {
+        font-size: 12px;
+        justify-content: center;
+        height: 31%;
+        line-height: 1.5;
+    }
+
+    .marcarfavoritocancionenreproduccion {
+        width: 30%;
+        top: 1em;
+        left: 4em;
+
+    }
+
+}
+
+/*Seccion Derecha*/
+.seccionDerecha {
+    height: 880px;
+
+}
+
+@media screen and (max-width: 480px) {
+    .seccionDerecha {
+        width: 90%;
+        margin-left: auto;
+        height: auto;
+
+    }
+}
+
+
+/*Header*/
+
+.paginaSituada {
+
+    margin: 0.4em;
+
+}
+
+#tituloPagina {
+    font-size: 250%;
+    font-family: ShadowsIntoLight;
+    color: #D9DDE5;
+    margin-top: 0.7em;
+}
+
+@media screen and (max-width: 480px) {
+    #tituloPagina {
+        font-size: 160%;
+        margin-top: 0em;
+        margin-left: auto;
+    }
+}
+
+
+.infoUsuario {
+    color: #D9DDE5;
+    text-align: right;
+    margin-top: 1em;
+    padding: 0em;
+    margin-right: -2em;
+
+}
+
+@media screen and (max-width: 480px) {
+    .infoUsuario {
+        font-size: 50%;
+        margin-right: 0.5em;
+        margin-top: 2em;
+
+    }
+
+    .infoUsuario a {
+        font-size: 130%;
+        margin-right: 0em;
+    }
+
+
+}
+
+.infoUsuario a {
+    color: #9B9FF2;
+    text-align: left;
+    margin-top: 4em;
+    padding: 0.50em;
+}
+
+
+.infoUsuario h1 {
+    font-size: 1.5em;
+    margin-top: 0em;
+}
+
+.infoUsuario p {
+    margin-top: -1.5em;
+}
+
+.informacionPagina {
+    height: 634px;
+    background: rgb(31, 31, 30);
+    background: linear-gradient(180deg, rgba(31, 31, 30, 1) 42%, rgba(18, 18, 18, 1) 100%);
+    text-align: center;
+    overflow-y: scroll;
+    margin-left: -3em;
+    border-bottom-right-radius: 10px;
+
+}
+
+
+
+
+#tablaCanciones {
+    width: 100%;
+    height: 300px;
+    background: rgb(141, 63, 216);
+    background: linear-gradient(180deg, rgba(141, 63, 216, 1) 0%, rgba(67, 30, 102, 1) 53%, rgba(18, 19, 19, 1) 85%);
+    border-collapse: collapse;
+    border-color: #000000;
+}
+
+
+
+.reproductorMusica {
+    height: 100px;
+    background-color: var(--color-informacionpagina);
+    border: 1px solid black;
+    text-align: center;
+    margin-left: -3em;
+}
+
+.barraReproduciendoSonido {
+    margin-top: 2.5em;
+}
+
+/*Footer*/
+
+.integrantesFooter {
+    height: auto;
+    width: auto;
+    margin: 1em;
+    color: lightcyan;
+}
+
+.mapaFooter {
+    height: auto;
+    width: auto;
+    margin: 1em;
+}
+
+
+
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .mapaFooter {
+        height: 85%;
+        width: 90%;
+        margin: 0em;
+        margin-top: 1em;
+
+    }
+
+    #tablaCanciones {
+        font-size: 14px;
+    }
+
+    .integrantesFooter {
+        min-height: 100px;
+        font-size: 80%;
+
+    }
+
+    .informacionPagina {
+        height: auto;
+        max-height: 450px;
+
+
+    }
+
+
+
+}
+
+/*Vista Perfil Pagar Premium*/
+
+.contenedorDeSeccionesPerfilPagarPremium {
+    color: #D9DDE5;
+    background-color: var(--color-header);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-items: stretch;
+    gap: 0.5em;
+}
+
+/*Header*/
+.headerPerfilPagarPremium {
+    color: #D9DDE5;
+    height: 100px;
+    background-color: var(--color-header);
+    border: 1px solid black;
+    text-align: center;
+    grid-column: 1/4;
+}
+
+/*Formulario*/
+
+.seccionFormulario {
+    height: auto;
+    background-color: var(--color-informacionpagina);
+    color: #D9DDE5;
+    border: 1px solid black;
+    text-align: left;
+    grid-column: 1/4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: -1em;
+ 
+}
+
+.formularioDatos {
+    background: linear-gradient(180deg, rgba(80, 12, 59, 1) 0%, rgba(35, 7, 27, 1) 24%, rgba(18, 19, 19, 1) 74%);
+    text-align: center;
+    margin-bottom: 1em;
+   
+}
+.formularioPagar{
+    height: auto;
+    width: 70%;
+    text-align: right;
+    
+}
+
+.formularioPagar input {
+    margin-right: 8em;
+}
+.camposPagar {
+    width: 345px;
+    height: 45px;
+    border-radius: 5px;
+    color: white;
+    background-color: #111010;
+    border: 1px solid gray;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-weight: bold;
+}
+
+.info-del-plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0em;
+    margin-bottom: 1em;
+
+}
+
+.info-del-plan h2{
+    margin-bottom: 0em;
+    font-family: ShadowsIntoLight, Times, serif;
+    font-size: 2em;
+}
+
+.ventajas {
+  
+    margin-top: 0;
+    font-style: oblique;
+
+}
+
+
+
+.ventajas li {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ventajas i.material-symbols-outlined{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+.seccionBotones {
+    height: 100px;
+    width: 40%;
+    margin: 0 auto;
+    color: #D9DDE5;
+    text-align: center;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: auto auto;
+    line-height: 80px;
+    grid-gap: 2%;
+}
+
+.botonUno {
+    width: 173px;
+    height: 45px;
+    color: white;
+    font-size: 1em;
+    border: 1px solid white;
+    background-color: var(--color-nav);
+    border-radius: 5%;
+    margin-left: 2em;
+}
+
+.botonDos {
+    width: 173px;
+    height: 45px;
+    color: white;
+    font-size: 1em;
+
+    border: 1px solid white;
+    background-color: var(--color-nav);
+    border-radius: 5%;
+}
+
+/*Footer*/
+
+.footerPerfilPagarPremium {
+    height: 200px;
+    background-color: var(--color-nav);
+    color: #D9DDE5;
+    text-align: center;
+    grid-column: 1/4;
+}
+
+/* planes */
+/* aca */
+.seccionPlanIzquierda {
+    background: linear-gradient(180deg, rgba(80, 12, 59, 1) 0%, rgba(35, 7, 27, 1) 24%, rgba(18, 19, 19, 1) 74%);
+    height: 400px;
+    background-color: var(--color-nav);
+    color: white;
+    text-align: center;
+}
+
+.seccionPlanMedio {
+    background: linear-gradient(180deg, rgba(80, 12, 59, 1) 0%, rgba(35, 7, 27, 1) 24%, rgba(18, 19, 19, 1) 74%);
+    height: 400px;
+    background-color: var(--color-nav);
+    color: white;
+    text-align: center;
+}
+
+.seccionPlanDerecha {
+    background: linear-gradient(180deg, rgba(80, 12, 59, 1) 0%, rgba(35, 7, 27, 1) 24%, rgba(18, 19, 19, 1) 74%);
+    height: 400px;
+    background-color: var(--color-nav);
+    color: white;
+    text-align: center;
+}
+
+.planes {
+    height: 50%;
+    width: 50%;
+}
+
+/* Musica-sonando */
+
+.cancionessonando {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    background: rgb(141, 63, 216);
+    background: linear-gradient(180deg, rgba(141, 63, 216, 1) 0%, rgba(67, 30, 102, 1) 53%, rgba(18, 19, 19, 1) 85%);
+}
+
+.texto-encabezadocancionessonando {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+
+}
+
+.texto-cancionessonando {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+
+    font-size: 20px;
+}
+
+.espacio-botonplay {
+    width: 3%;
+
+}
+
+.boton-Play {
+    width: 30px;
+    height: 40px;
+    border-collapse: collapse;
+}
+
+.boton-Estrella {
+    filter: grayscale(100%);
+    width: 40px;
+    margin-left: 2em;
+    transition: filter 0.6s;
+}
+
+.boton-Estrella:hover {
+    filter: grayscale(0%);
+
+}
+
+
+/* Albums favoritos */
+
+.albumsfavoritos {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.album {
+    position: relative;
+    width: 17%;
+    margin: 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagenalbum {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.marcarfavorito {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+}
+
+@media screen and (max-width: 480px) {
+    .album {
+        width: 40%;
+    }
+
+    .marcarfavorito {
+        width: 50%;
+        margin-top: -0.2em;
+        margin-right: -0.2em;
+    }
+
+    .texto-encabezadocancionessonando {
+        padding: 2px;
+        font-size: 9px;
+    }
+
+    .texto-cancionessonando {
+        padding: 10px;
+        font-size: 9px;
+    }
+
+
+    .boton-Play {
+        width: 11px;
+        height: 12px;
+        border-collapse: collapse;
+    }
+
+    .boton-Estrella {
+        filter: grayscale(100%);
+        width: 22px;
+        margin: 0;
+        transition: filter 0.6s;
+    }
+
+}
+
+
+.marcarfavorito img:hover {
+    filter: grayscale(100%);
+}
+
+
+.fotoavatar {
+    width: 40%;
+    border: 2px solid black;
+    margin: 2%;
+}
+
+@media screen and (max-width: 480px) {
+    .fotoavatar {
+        width: 80%;
+        margin-right: 1em;
+        margin-top: 1em;
+    }
+}
+
+
+
+.fotoavatar2 {
+    width: 33%;
+    border: 2px solid black;
+}
+
+@font-face {
+    font-family: 'ShadowsIntoLight';
+    src: url(../img/PTSans-Italic.ttf) format('truetype');
+}
+
+.marcarfavoritohome {
+    filter: grayscale(100%);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+}
+
+
+.marcarfavoritohome:hover {
+    filter: grayscale(0%);
+}
+
+
+.barra-busqueda {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+    margin-top: 1.5em;
+}
+
+#busqueda-input {
+    flex-grow: 1;
+    padding: 1.2%;
+    margin-right: 10px;
+    border-radius: 12px;
+    border-width: 1.5px;
+}
+
+@media screen and (max-width: 480px) {
+    #busqueda-input {
+        width: 100%;
+        margin-top: 1em;
+        margin-bottom: 12px;
+    }
+
+    .barra-busqueda {
+        width: 120%;
+    }
+
+}
+
+.form-perfil {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-perfil {
+
+    color: #D9DDE5;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.input-label-perfil {
+    display: flex;
+    justify-content: space-between;
+    width: 28%;
+    margin: auto;
+    align-items: center;
+}
+
+.input-perfil {
+    width: 351px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #111010;
+    font-size: 14px;
+    border: 1px solid gray;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-weight: bold;
+    margin: 15px 0px 15px 0px;
+}
+
+.formPerfil input {
+    color: #D9DDE5;
+}
+
+.botones-perfil input {
+    width: 173px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #111010;
+    font-size: 14px;
+    border: 1px solid gray;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-weight: bold;
+    margin: 15px 0px 15px 0px;
+}
+
+.links-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 28%;
+    margin: auto;
+}
+
+.links-perfil a {
+    margin: 20px 0px 20px 0px;
+}
+
+.botones-perfil {
+    display: flex;
+    margin: auto;
+    width: 28%;
+    justify-content: space-between;
+}
+
+/* Estilos para carrousel de imagenes*/
+
+.carrusel{
+    width: 95%;
+    max-width: 120em;
+    background-color:rgb(72, 27, 115);
+    padding: 1em;    
+    overflow-x: hidden;
+    border-radius:.5cm;
+}
+.carrusel .grande{
+    width: 400%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    transition: all 1s ease;
+    transform: translateX(0%);
+}
+.carrusel .imgRecital{
+    width:calc(100% / 4 - 2em);
+    min-height: 10vh;
+}
+.imgRecital{
+    height:400px;
+    border-radius: .5cm;
+}
+.carrusel .puntos{
+    width: 100%;
+    margin: .1em 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.carrusel .punto{
+    width: 2em;
+    height: 2em;
+    color: rgb(72, 27, 115);
+    background-color: rgb(176, 176, 198);
+    margin: 1em 1em 0;
+    border-radius: 1cm;
+}
+.carrusel .punto.activo{
+    background-color: rgb(77, 195, 87);
+}
+
+/* Estilos para calendario y popup*/
+
+.seccion-calendario{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.calendario{
+    width: 90%;
+}
+
+.d-none{
+    display: none;
+}
+
+.contenedor-popup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(79, 79, 79, 0.9);
+    z-index: 1;
+    position: fixed;
+}
+
+.contenido-popup{
+    width: auto;
+    height: 13em;
+    padding: 1em;
+    border: black solid 1px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: justify;
+    color: #000000;
+    position: absolute;
+}
+
+#cerrar-popup{
+    display: flex;
+    position: relative;
+    bottom: 13em;
+    left: 19em;
+    border-radius: 15px;
+    font-size: large;
+}
+
+.contenido-popup p{
+    display: flex;
+    justify-content: center;
+}
+
+.contenido-popup h2{
+    text-decoration: underline;
+}

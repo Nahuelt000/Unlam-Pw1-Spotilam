@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylelogin.css">
+    <title>Spotilam</title>
+    <link rel="shortcut icon" href="./img/auriculares.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Oswald:wght@200&family=PT+Sans:ital,wght@1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="js/formulario.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./img/auriculares.png" class="logoAuriculares">
+        <p>SPOTILAM</p>
+    </header>
+
+    <form class="form-login" action="./home.html" method="get" id="form" name="form">
+        <p class="usuariocontraseña">Nombre de usuario</p>
+        <label for="Usuario"></label>
+        <input id="Usuario" type="text" name="Usuario" id="nombre" placeholder="Ingresa tu usuario"
+            class="camposusuarioycontraseña">
+
+        <p class="usuariocontraseña">Ingresa tu contraseña</p>
+        <label for="pass"> </label>
+        <input id="pass" type="password" id="pass" name="pass" placeholder="Ingresa tu contraseña"
+            class="camposusuarioycontraseña">
+        <br>
+        <input name="Boton" type="button" onclick="validar_envio()" id="Enviar" value="Enviar" value="Iniciar sesión"
+            class="boton-iniciar-sesion">
+    </form>
+
+    <a href="./vista-registro.html" class="registrarme">Registrarme</a>
+
+    <footer>
+
+        <section class="integrantesFooter">
+            <p><i class="fa-solid fa-user"></i> Integrante Alarcón Lucía Daniela 46265782</p>
+            <p><i class="fa-solid fa-user"></i> Integrante Cambriglia Luka 45747018</p>
+            <p><i class="fa-solid fa-user"></i> Integrante Rodriguez Agustin Federico 44669205</p>
+            <p><i class="fa-solid fa-user"></i> Integrante Tacacho Nahuel Guillermo 44392518</p>
+        </section>
+    </footer>
+    <script type="text/javascript" src="js/nombre-usuario.js"></script>
+</body>
+</html>
